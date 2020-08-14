@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #editor {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        height: 35rem;
+        width: 100%;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+</style>
+
+<body>
+
+    <div id="editor" class="mb-4">#include<stdio.h>
+        int main()
+        {
+            printf("hello world");
+        }
+    </div>
+
+    <script src="js/ace.js"></script>
+    <script>
+        var editor = ace.edit("editor");
+        editor.setReadOnly(true);
+        editor.autoIndent(false);
+        editor.setTheme("ace/theme/dracula");
+        const nmode = "ace/mode/" + "c_cpp";
+        editor.session.setMode(nmode);
+    </script>
+
+</body>
+
+</html>

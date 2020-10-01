@@ -1,4 +1,3 @@
 From this repository you can easily change the mode(specifying the language or something else) and even theme which can be searched on the internet.
-
-
+You can also manipulate the modules in java script folder example in the root directory go to the js folder.
 To change the mode simply search for the module in the js folder and then simply replace the name of the mode in index.html folder and use it according to you.
